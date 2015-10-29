@@ -1,0 +1,16 @@
+/*------------------------------------*\
+	#Footer
+\*------------------------------------*/
+
+.footer{
+	width:100%;
+	padding-bottom: 30px; border-top: 1px solid #373632;
+	background:#191814;
+}
+
+.footerWrapper .copy{
+	width: 800px;
+	padding-bottom: 100px; margin-top: 20px;
+	background:url(../images/logo_footer.png) center bottom no-repeat;
+	float:left;
+}

@@ -1,0 +1,73 @@
+/*------------------------------------*\
+	#Tables
+\*------------------------------------*/
+
+table#athletes{
+	width: 100%;
+	font-weight: bold;
+
+}
+table#athletes tr{
+	width:100%;
+	display: table-row;
+}
+table#athletes tr th {
+	padding:5px 10px; margin-bottom:20px;
+	font-size:12px; font-weight:bold;
+	text-align:left;
+}
+
+table#athletes tr th a{
+	padding-right:15px;
+	color:#255a84;
+	font-size:15px;
+	text-transform:uppercase; text-shadow: #fff 1px 1px; text-decoration:none;
+}
+table#athletes tr th a.desc{ background:url(../images/arrow_down.png) right 6px no-repeat; }
+table#athletes tr th a.asc{ background:url(../images/arrow_up.png) right 6px no-repeat; }
+
+table#athletes tr td {
+	padding:20px 10px 20px 10px; border-bottom:1px solid #dcdcdc;
+	background:url(../images/db_bg.jpg) 0 bottom repeat-x;
+}
+
+table#profileData{
+	width:100%;
+	border-bottom:1px solid #cdcdcd; margin-bottom:20px;
+}
+
+table#profileData td{
+	vertical-align:text-top;
+	padding:10px 0;
+}
+
+#viewTable{
+	width:100%;
+	padding-bottom:20px; border-bottom:1px solid #b3b3b3; margin-bottom:20px;
+}
+
+#viewTable td{
+	width:50%;
+	padding:4px 0;
+}
+
+#viewTable #social{ margin-top:20px; }
+
+#viewTable #social .item{
+	margin-right:20px;
+	float:left;
+}
+
+#profileData{ width:100%; }
+
+#profileData td{
+	padding:10px 0;
+	font-weight:bold;
+	vertical-align:top;
+}
+#profileData td.key{
+	width:150px;
+	font-weight:normal;
+}
+
+#contact_form table{ width:100%; }

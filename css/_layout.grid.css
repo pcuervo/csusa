@@ -1,0 +1,23 @@
+/*------------------------------------*\
+	#Layout
+\*------------------------------------*/
+
+.mainCol{
+	width:663px;
+	float:left;
+}
+
+.footerCol{
+	max-width:155px;
+	margin: 0 70px 0 5px;
+	text-align:left;
+	float:left;
+}
+.footerCol.first{ margin: 0 70px 0 160px; }
+
+.leftCol{
+	width: 210px;
+	padding-bottom: 100px; margin-right: 20px;
+	background:url(../images/logo_article.jpg) no-repeat center bottom;
+	float:left;
+}

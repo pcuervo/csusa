@@ -1,0 +1,9 @@
+/*------------------------------------*\
+	#Language selector
+\*------------------------------------*/
+
+.language_select{ float:right; }
+.language_select img {
+	margin-left:10px;
+	float: right;
+}

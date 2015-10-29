@@ -1,0 +1,36 @@
+/*------------------------------------*\
+	#Images
+\*------------------------------------*/
+
+img{ border: 0; }
+
+.mainImg{ margin:20px 0; }
+
+.shield{ margin-top:-130px; }
+
+#banners{
+	width:980px; height:400px;
+}
+
+.logo{
+	position:absolute; top:5px;
+	z-index:20;
+}
+
+.mainBanners{
+	width: 643px; height: 209px;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+
+.latestNews li img{
+	border:1px solid #dcdadb; margin: 0 20px 20px 0;
+	float:left;
+}
+
+.blogExcerpt img{
+	border:1px solid #dcdadb; margin-right:20px;
+	float:left;
+}
+
+#cyclePartners img{ margin:10px; }

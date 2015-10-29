@@ -1,0 +1,19 @@
+/*------------------------------------*\
+	#Videos
+\*------------------------------------*/
+
+.video_thumb{
+	display: block;
+	height: 105px;
+	width: 140px;
+	padding:5px 20px; border:1px solid #cccccc;
+}
+
+.videos{ position:relative; }
+
+.videos .hover{
+	display: block !important;
+	position: absolute; left: 0px; top:-95px;
+	cursor:pointer;
+	z-index: 1000;
+}

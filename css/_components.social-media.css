@@ -1,0 +1,92 @@
+/*------------------------------------*\
+	#Social media
+\*------------------------------------*/
+
+#fb-root{ float: left; }
+
+.twitter{
+	width: 185px; height: 25px;
+	margin: 10px 12px 20px 0;
+	background:transparent url(../images/social_sprite.jpg) no-repeat -198px 0px;
+	text-indent:-9999px;
+	float: left;
+}
+.twitter:hover{ background-position:-198px -30px; }
+
+.facebook{
+	width: 185px; height: 25px;
+	margin: 10px 12px 20px 0;
+	background: transparent url(../images/social_sprite.jpg) no-repeat -5px 0px;
+	text-indent: -9999px;
+	float: left;
+}
+.facebook:hover{background-position:-5px -30px; }
+
+.skype{
+	width: 185px; height: 25px;
+	margin:10px 12px 20px 0;
+	background:transparent url(../images/social_sprite.jpg) no-repeat -5px 0px;
+	text-indent:-9999px;
+	float: left;
+}
+.skype:hover{background-position:-5px -30px; }
+
+.twitterBlog{
+	width: 185px; height: 25px;
+	margin:5px auto 5px 25px;
+	background:transparent url(../images/social_sprite.jpg) no-repeat -198px 0px;
+	text-indent:-9999px;
+	float: left;
+	clear:both;
+}
+.twitterBlog:hover{background-position:-198px -30px; }
+
+.facebookBlog{
+	width: 185px; height: 25px;
+	margin:5px auto 10px 25px;
+	background:transparent url(../images/social_sprite.jpg) no-repeat -5px 0px;
+	text-indent:-9999px;
+	float: left;
+	clear:both;
+}
+.facebookBlog:hover{background-position:-5px -30px; }
+
+.skypeBlog{
+	width: 185px; height: 25px;
+	margin:5px auto 10px 25px;
+	background:transparent url(../images/social_sprite.jpg) no-repeat -391px 0px;
+	text-indent:-9999px;
+	float: left;
+	clear: both;
+}
+.skypeBlog:hover{ background-position:-391px -30px; }
+
+.twitterContact{
+	width: 185px; height: 25px;
+	margin:5px auto 5px 0;
+	background:transparent url(../images/social_sprite.jpg) no-repeat -198px 0px;
+	text-indent:-9999px;
+	float: left;
+	clear:both;
+}
+.twitterContact:hover{ background-position:-198px -30px; }
+
+.facebookContact{
+	width: 185px; height: 25px;
+	margin: 0 auto 10px 0;
+	background:transparent url(../images/social_sprite.jpg) no-repeat -5px 0px;
+	text-indent:-9999px;
+	float: left;
+	clear:both;
+}
+.facebookContact:hover{ background-position:-5px -30px; }
+
+.skypeContact{
+	width: 185px; height: 25px;
+	margin:5px auto 10px 0;
+	background:transparent url(../images/social_sprite.jpg) no-repeat -391px 0px;
+	text-indent:-9999px;
+	float: left;
+	clear:both;
+}
+.skypeContact:hover{ background-position:-391px -30px; }

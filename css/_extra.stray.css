@@ -1,0 +1,65 @@
+/*------------------------------------*\
+	#Stray styles
+\*------------------------------------*/
+
+.padHome{
+	padding-top:20px; margin-top:12px;
+}
+.pad{ padding-top:230px; }
+.profilePad{ padding-top:65px; }
+
+#editPhoto{
+	padding:5px 10px;
+	background:url(../images/csusa-op.png) 0 0 repeat;
+	color:#fff;
+	position:absolute; right: 0;
+}
+
+.Gold{
+	display:block;
+	padding:8px 0 8px 40px; margin-top:5px;
+	background:url(../images/data_Gold.png) 0 0 no-repeat;
+}
+.Silver{
+	display:block;
+	padding:8px 0 8px 40px; margin-top:5px;
+	background:url(../images/data_Silver.png) 0 0 no-repeat;
+}
+.Bronze{
+	display:block;
+	padding:8px 0 8px 40px; margin-top:5px;
+	background:url(../images/data_Bronze.png) 0 0 no-repeat;
+}
+
+.registerStatus{
+	margin: 5px 20px 10px 0;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #ebebeb;
+	float:left;
+}
+
+.roundedAdmin{
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+
+	border-top-left-radius: 2px 2px;
+	border-top-right-radius:2px 2px;
+
+	border-bottom-right-radius: 2px 2px;
+	border-bottom-left-radius:2px 2px;
+}
+
+.share{
+	padding-top: 20px; border-top:1px solid #dcdcdc; margin-top: 20px; }
+
+.leftCol div{ text-transform:uppercase; }
+
+.content-left.watermark{
+	padding-bottom: 100px;
+	background:#fff url(../images/logo_article_2.jpg) no-repeat center bottom;
+}
+
+#disclaimer{ margin-top:70px; }

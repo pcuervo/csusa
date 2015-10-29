@@ -1,0 +1,65 @@
+/*------------------------------------*\
+	#Forms
+\*------------------------------------*/
+
+form div{
+	clear:right;
+}
+
+textarea{
+	width:360px; height:120px;
+	border:solid 1px #ccc; margin:2px 0 25px 0;
+	background:#fff url(../images/bgInput.gif) repeat-x 0 -60px;
+	color:#666;
+
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius: 4px;
+}
+
+
+label{
+	display:block;
+	width:190px;
+	margin-bottom:20px;
+	font-weight:bold;
+	float:left;
+}
+
+input[type="text"],
+input[type="password"]{
+	width:350px; height:16px;
+	padding:6px; border:solid 1px #ccc; margin:2px 0 25px 0;
+	background: #fff url('images/bgInput.gif') repeat-x 0 -60px;
+	color:#666;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:4px;
+}
+input[type="file"]{ margin:2px 0 20px 10px; }
+
+input[type="radio"]{ margin:2px 0 40px 10px; }
+
+select {
+	width:150px; height:31px;
+	padding: 5px; border: solid 1px #ccc;
+	margin: 2px 0 25px 0;
+	background:url('images/bgInput.gif') repeat-x 0 -60px;
+	color:#666;
+
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:4px;
+}
+select#setlang{
+	width:100px;
+	margin: 0;
+}
+
+#contact_form table input[type="text"]{
+	width:280px;
+	margin: 0;
+}

@@ -1,0 +1,148 @@
+/*------------------------------------*\
+	#Lists
+\*------------------------------------*/
+
+.footer ul{
+	padding: 0; margin: 0;
+	list-style:none;
+}
+.footer ul li{ padding:5px 0; }
+
+#global-nav ul {
+	margin: 0;
+	list-style:none;
+}
+#global-nav ul.branded { float:right; }
+#global-nav ul.branded ul {
+	display:none;
+	width:915px;
+	position: absolute; top:65px; left: 0;
+	text-align:right;
+}
+
+#global-nav li {
+	margin: 20px 0 0 0;
+	float: left;
+}
+#global-nav ul.branded ul li {
+	padding: 0; margin: 0;
+	float: right;
+}
+
+.mainList{
+	margin: 0; padding: 0;
+	list-style: none;
+}
+.mainList li{
+	width:165px; height:260px;
+	margin: 0 15px 0 40px;
+	float: left;
+}
+.mainList li.end{ margin: 0 0 0 40px; }
+
+.subList{
+	padding: 0;
+	margin: 0 0 0 0;
+	list-style: none;
+}
+.subList li{
+	width: 310px;
+	padding: 0; margin: 5px 0 5px 5px;
+	float: left;
+}
+
+.latestNewsSide{
+	padding: 0; margin: 0;
+	list-style: none;
+}
+.latestNewsSide li{
+	padding: 10px 0 10px 0; border-bottom: 1px solid #dcdcdc; margin: 5px 0;
+}
+
+.splitList{ width:440px}
+.splitList li{
+	width:170px;
+	margin-right: 20px;
+	float: left;
+}
+
+.additionalPages{
+	padding: 0;
+	list-style: none;
+}
+.additionalPages li{
+	width: 940px;
+	border-top: 1px solid #a9a9a9; margin: 10px 0; border: 1px solid #e1e1e1;
+	background: #fff;
+	clear: both;
+}
+
+.additionalPages li .text{
+	padding: 10px 40px 10px 0; margin-left: 270px;
+}
+.additionalPages li ul li{ width: auto; }
+.additionalPages li .videosList li{
+	padding: 0; border: 0; margin: 0 20px 0 0;
+	float:left;
+	clear:none;
+}
+
+.latestNews{
+	padding: 0; margin: 0;
+	list-style: none;
+}
+.latestNews li{
+	padding: 15px 0 15px 0; margin:10px 0; border-bottom: 1px solid #dcdcdc;
+}
+
+.leftColView{
+	width:210px;
+	border-right: 1px solid #b3b3b3; padding-bottom:100px; margin-right:20px;
+	float:left;
+}
+.leftColView ul{
+	margin:10px 0 10px 10px;padding: 0;
+	list-style:none;
+}
+.leftColView ul li{
+	margin:10px 0;
+	list-style:none;
+}
+.leftColView ul li a{
+	font-size:14px;
+	text-transform:uppercase;
+	color:#171612;
+}
+
+.profileList{}
+.profileList li{
+	width:265px; height:40px;
+	margin: 5px 20px 5px 10px;
+	float:left;
+}
+
+.comments{
+	padding: 0;
+	list-style:none;
+}
+.comments li{
+	padding:10px 0; border-bottom:1px solid #dcdcdc;
+}
+
+#carouselnav ul {
+	width:158px;
+	margin: 0 auto; padding: 0;list-style:none;float:right; }
+#carouselnav li {
+	font-weight:bold;
+	float:left;
+}
+
+.videosList{
+	width:100%;
+	padding: 0; margin: 0 0 20px 0;
+	list-style:none;
+}
+.videosList li{
+	padding: 0; margin: 0 20px 0 0;
+	float:left;
+}

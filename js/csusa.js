@@ -1,5 +1,3 @@
-Cufon.replace('#global-nav ul li a',{hover: true,textShadow: '#000 1px 1px'});Cufon.replace('h1');Cufon.replace('h2');Cufon.replace('h3');Cufon.replace('.latestNewsSide h4');Cufon.replace('.latestNews h4');Cufon.replace('.footer h4');Cufon.replace('.leftCol div');Cufon.replace('.btn',{hover: true,textShadow: '#803321 1px 1px'});Cufon.replace('.btnSmall',{hover: true,textShadow: '#803321 1px 1px'});Cufon.replace('.leftColView ul li a');Cufon.replace('.registerStatus');Cufon.replace('.profileTitle');
-
 $(window).load(function(){
 show_nav = false;
 	$('li.parent').children('ul').hide();
@@ -20,7 +18,7 @@ $('#global-nav>ul>li.parent').hoverIntent(function(){
         $('#global-header .helper .wrapper').stop(true).animate({
             paddingBottom: '48px'
         },200);
-	
+
         show_new_subnav(target);
 
     },function(){
@@ -30,7 +28,7 @@ $('#global-nav>ul>li.parent').hoverIntent(function(){
                 paddingBottom: '0'
             },200,function(){
             });
-        }else{      
+        }else{
 		$('li.parent').children('ul').hide();
 		$('#global-nav li.parent a.active').parent("li").find('ul').fadeIn('fast');
 		$('#global-nav li.parent a.active').parent("li").find('ul').css('display','block');
@@ -61,40 +59,40 @@ $('.text').hide();
 $('.mailingList').click(function() {
 			url = $(this).attr("href");
 			titleText = $(this).attr("title");
-      			$("#mailing").load(url).dialog({height:260,width:690,modal:true,title:titleText}); 
- 
+      			$("#mailing").load(url).dialog({height:260,width:690,modal:true,title:titleText});
+
 			return false;
 });
 
 $('.register').click(function() {
 			url = $(this).attr("href");
 			titleText = $(this).attr("title");
-      			$("#mailing").load(url).dialog({height:350,width:650,modal:true,title:titleText}); 
- 
+      			$("#mailing").load(url).dialog({height:350,width:650,modal:true,title:titleText});
+
 			return false;
 });
 
 $('.login').click(function() {
 			url = $(this).attr("href");
 			titleText = $(this).attr("title");
-      			$("#login").load(url).dialog({height:350,width:650,modal:true,title:titleText}); 
- 
+      			$("#login").load(url).dialog({height:350,width:650,modal:true,title:titleText});
+
 			return false;
 });
 
 $('.forgot-password').bind('click', function() {
 			url = $(this).attr("href");
 			titleText = $(this).attr("title");
-      			$("#forgotpassword").load(url).dialog({height:350,width:650,modal:true,title:titleText}); 
- 
+      			$("#forgotpassword").load(url).dialog({height:350,width:650,modal:true,title:titleText});
+
 			return false;
 });
 
 $('.slideshare').click(function() {
 			url = $(this).attr("href");
 			titleText = $(this).attr("title");
-      			$("#mailing").load(url).dialog({height:450,width:465,modal:true,title:titleText,beforeClose: function(event, ui) {$("#mailing").html(''); }}); 
- 			
+      			$("#mailing").load(url).dialog({height:450,width:465,modal:true,title:titleText,beforeClose: function(event, ui) {$("#mailing").html(''); }});
+
 			return false;
 });
 
@@ -128,3 +126,35 @@ function set_lang(target, site_url){
 			}
 	});
 }
+
+
+function imgToSvg(){
+    $('img.svg').each(function(){
+        var $img = $(this);
+        var imgID = $img.attr('id');
+        var imgClass = $img.attr('class');
+        var imgURL = $img.attr('src');
+
+        $.get(imgURL, function(data) {
+            // Get the SVG tag, ignore the rest
+            var $svg = $(data).find('svg');
+
+            // Add replaced image's ID to the new SVG
+            if(typeof imgID !== 'undefined') {
+                $svg = $svg.attr('id', imgID);
+            }
+            // Add replaced image's classes to the new SVG
+            if(typeof imgClass !== 'undefined') {
+                $svg = $svg.attr('class', imgClass+' replaced-svg');
+            }
+
+            // Remove any invalid XML tags as per http://validator.w3.org
+            $svg = $svg.removeAttr('xmlns:a');
+
+            // Replace image with new SVG
+            $img.replaceWith($svg);
+
+        }, 'xml');
+
+    });
+} //imgToSvg
