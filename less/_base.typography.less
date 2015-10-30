@@ -3,6 +3,18 @@
 \*------------------------------------*/
 
 /**
+ * Font reset
+**/
+h1, h2, h3, h4, h5, h6,
+p, a, li,
+blockquote{
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.005);
+
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+/**
  * Headings
 **/
 h1{
@@ -25,13 +37,15 @@ h1{
 }
 
 h2{
-	text-transform: uppercase;
-	z-index: 1;
+	margin: 0 0 (@unit) 0;
+	font-size: 1.8em; font-weight: 400;
+	line-height: 1.4;
 }
 
 h3{
-	font-size: 16px;
-	text-transform: uppercase;
+	margin: 0 0 (@unit) 0;
+	font-size: 1.4em; font-weight: 400;
+	line-height: 1.4;
 }
 h3 a{ color:#302f2b; }
 h3 a:hover{ color: #302f2b; }
@@ -156,8 +170,15 @@ a{
 #carouselnav .endr a.on { background-position:-59px -64px; }
 
 /**
- * Parragraphs
+ * Text & text-like: Parragraphs, anchors, lis, etc.
 **/
+
+p, p a, li{
+	font-size: 1em; font-weight: 400;
+	line-height: 1.4;
+}
+
+p{ margin: 0 0 (@unit/2) 0; }
 
 
 /**

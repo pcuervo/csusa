@@ -2,34 +2,13 @@
 	#Utilities
 \*------------------------------------*/
 
-.left{
-	float: left;
-	margin: 0 15px 0 0 !important;
-}
+.left{ float: left; }
 .right{ float:right; }
 
-.top{ margin-top:20px; }
-
-.content-left{
-	padding: 10px 20px; border:1px solid #e1e1e1;
-	background: @light;
-}
-
 .rounded{
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-o-border-radius: 8px;
-	border-radius: 8px;
+	.border-radius(1px);
 }
 
-.roundedTop{
-	-webkit-border-top-left-radius: 8px;
-	-webkit-border-top-right-radius: 8px;
-	-moz-border-radius-topleft: 8px;
-	-moz-border-radius-topright: 8px;
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
-}
 
 
 
@@ -312,10 +291,14 @@
 
 
 /*------------------------------------*\
-	#SCREENS
+	#GRADIENTS
 \*------------------------------------*/
-.gradient{
-	.gradient();
+.gradient--left-top--dark{
+	.gradient--left-top(#011a21, #0c81bc);
+}
+
+.gradient--left-top--light{
+	.gradient--left-top(#0c81bc, #0ca9d2);
 }
 
 
