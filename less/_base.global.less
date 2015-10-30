@@ -1,8 +1,19 @@
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+
+/**
+ * Measurements
+**/
+
+@unit: 20px;
+
+
 /**
  * Selections
 **/
-/*::selection{ background: @secondary; color: @light; }
-::-moz-selection { background: @secondary; color: @light; }*/
+::selection{ background: @secondary; color: @light; }
+::-moz-selection { background: @secondary; color: @light; }
 
 
 /**
@@ -12,4 +23,12 @@
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+/**
+ * Margin bottom with lobotomized owl selector
+ * http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
+**/
+* + * {
+	//margin-bottom: @unit;
 }

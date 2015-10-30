@@ -22,9 +22,9 @@
 \*------------------------------------*/
 
 .clearfix() {
+	zoom:1;
 	&:before, &:after { content: ""; display: table; }
 	&:after { clear: both; }
-	.clearfix { zoom:1; }
 }
 
 .opacity(@ms, @modern){

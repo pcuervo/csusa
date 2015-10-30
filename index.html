@@ -54,117 +54,115 @@
 	<!-- <body class="{embed="site/.bodyClass"}"> -->
 	<body>
 
-		<div id="container">
+		<div clas="[ container ]">
 
 			<!-- =================================================
 			==== HEADER
 			================================================== -->
 			<header>
-				<div id="global-mini-nav">
-					<div class="wrapperHeader clearfix">
-						<div class="language_select clearfix">
+				<div class="[ wrapper ][ row ]">
+					<div class="[ column xmall-5 ]">
+						<a class="[ block ]" href="/en">
+							<img src="images/logo.png" class="[ logo ][ inline-block align-middle ]" alt="College Scholarships USA"/><h1
+							class="[ mainTitle ][ uppercase ][ inline-block align-middle ]">College <wbr>Scholarships USA<br/><span class="[ color-primary text-normal ]">Pursue Ambition</span></h1>
+						</a>
+					</div>
+					<div class="[ column xmall-7 ]">
+						<div id="global-mini-nav">
+							<div class="[ clearfix ]">
+								<div class="[ language_select ][ clearfix ][ pull-right ]">
 
-							<div id="fb-root">
+									<div id="fb-root">
+									</div>
+									<fb:like href="http://www.facebook.com/collegescholarshipsusa" send="false" layout="button_count" width="80" show_faces="false" font="arial"></fb:like>
+
+									<img class="[ ]" src="images/United_Kingdom(Great_Britain).png" alt="English"/>
+								</div><!-- language_select -->
+
+								<div class="[ social-icons ][ pull-right ][ margin-right--small ]">
+									<a href="https://twitter.com/CSUSA_tweets" class="[ margin-sides--xsmall ]" target="_blank">
+										<img src="images/icons/logo-twitter-bird.svg" class="[ svg icon icon--iconed ][ color-light ]" alt="twitter">
+									</a>
+									<a href="https://www.facebook.com/collegescholarshipsusa" class="[ margin-sides--xsmall ]" target="_blank">
+										<img src="images/icons/logo-facebook.svg" class="[ svg icon icon--iconed ][ color-light ]" alt="facebook">
+									</a>
+									<a href="https://plus.google.com/+Collegescholarshipsusa2007/posts" class="[ margin-sides--xsmall ]" target="_blank">
+										<img src="images/icons/logo-google-plus-1.svg" class="[ svg icon icon--iconed ][ color-light ]" alt="google+">
+									</a>
+									<a href="https://instagram.com/collegescholarshipsusa" class="[ margin-sides--xsmall ]" target="_blank">
+										<img src="images/icons/logo-instagram.svg" class="[ svg icon icon--iconed ][ color-light ]" alt="instagram">
+									</a>
+								</div>
+
+							</div><!-- wrapperHeader -->
+						</div><!-- global-mini-nav -->
+
+						<div class="[ helper ]">
+							<div class="[ group clearfix ]">
+								<div id="global-nav" class="[ relative ]">
+									<ul class="branded group [ pull-right ]">
+										<li class="[ parent ][ pull-left ]" id="nav-about">
+											<a href="/en">About</a>
+											<ul class="group">
+												<li><a href="/about">About</a></li>
+												<li><a href="/team">CSUSA Team</a></li>
+											</ul>
+										</li>
+										<li class="[ parent ][ pull-left ]" id="nav-college-sports">
+											<a href="/college-sports">College Sports</a>
+											<ul class="group">
+												<li><a href="college-sports/{url_title}">College Sports</a></li>
+												<!--{/exp:channel:entries} -->
+											</ul>
+										</li>
+										<li class="[ parent ][ pull-left ]" id="nav-service">
+											<a href="/our-service">Our Service</a>
+											<ul class="group">
+												<!-- {exp:channel:entries channel="our_service" dynamic="no" status="open"} -->
+												<li><a href="/our-service/">Our Service</a></li>
+												<!-- {/exp:channel:entries} -->
+											</ul>
+										</li>
+										<li class="[ pull-left ]" id="nav-blog">
+											<a href="/news">News</a>
+										</li>
+										<li class="[ pull-left ]" id="nav-contact">
+											<a href="/contact">Contact</a>
+										</li>
+									</ul>
+								</div>
 							</div>
-							<fb:like href="http://www.facebook.com/collegescholarshipsusa" send="false" layout="button_count" width="80" show_faces="false" font="arial"></fb:like>
-
-							<form name="langmenu" action="/">
-								<img src="images/United_Kingdom(Great_Britain).png" alt="English"/>
-
-								<select id="setlang" onchange="set_lang(document.langmenu.setlang.options[document.langmenu.setlang.selectedIndex].value, '' )">
-									<option value="en" selected>English</option>
-									<option value="es">Español</option>
-									<option value="dk">Dansk</option>
-									<option value="de">Deutsch</option>
-									<option value="fr">Français</option>
-									<option value="no">Norsk</option>
-									<option value="se">Svenska</option>
-								</select>
-							</form>
-						</div><!-- language_select -->
-
-						<a href="/en"><img src="images/logo.png" class="logo" alt="College Scholarships USA"/></a>
-
-						<div class="[ language_select ]">
-							<a href="https://twitter.com/CSUSA_tweets" class="[ language_select ]" target="_blank">
-								<img src="images/icons/logo-twitter-bird.svg" class="[ svg ]" alt="twitter">
-							</a>
-							<a href="https://www.facebook.com/collegescholarshipsusa" class="[ language_select ]" target="_blank">
-								<img src="images/icons/logo-facebook.svg" class="[ svg ]" alt="facebook">
-							</a>
-							<a href="https://instagram.com/collegescholarshipsusa" class="[ language_select ]" target="_blank">
-								<img src="images/icons/logo-instagram.svg" class="[ svg ]" alt="instagram">
-							</a>
-							<a href="https://plus.google.com/+Collegescholarshipsusa2007/posts" class="[ language_select ]" target="_blank">
-								<img src="images/icons/logo-google-plus-1.svg" class="[ svg ]" alt="google+">
-							</a>
-						</div>
-
-					</div><!-- wrapperHeader -->
-				</div><!-- global-mini-nav -->
-
-				<div class="[ helper ]">
-					<div class="[ wrapper ][ group clearfix ]">
-						<h1 class="[ mainTitle ]">College Scholarships USA<br/><span>Pursue Ambition</span></h1>
-						<div id="global-nav">
-							<ul class="branded group">
-								<li class="parent" id="nav-about">
-									<a href="/en">About</a>
-									<ul class="group">
-										<li><a href="/about">About</a></li>
-										<li><a href="/team">CSUSA Team</a></li>
-									</ul>
-								</li>
-								<li class="parent" id="nav-college-sports">
-									<a href="/college-sports">College Sports</a>
-									<ul class="group">
-										<li><a href="college-sports/{url_title}">College Sports</a></li>
-										<!--{/exp:channel:entries} -->
-									</ul>
-								</li>
-								<li class="parent" id="nav-service">
-									<a href="/our-service">Our Service</a>
-										<ul class="group">
-											<!-- {exp:channel:entries channel="our_service" dynamic="no" status="open"} -->
-											<li><a href="/our-service/">Our Service</a></li>
-											<!-- {/exp:channel:entries} -->
-										</ul>
-								</li>
-								<li id="nav-blog"><a href="/news">News</a></li>
-								<li id="nav-contact"><a href="/contact">Contact</a></li>
-							</ul>
 						</div>
 					</div>
-				</div>
-
+				</div><!-- wrapper -->
 			</header><!-- global-header -->
 
-			<div class="wrapper">
-				<div id="banners" class="clearfix"></div>
-				<div id="carouselnav">
-					<ul>
-						<li class="endl 1"><a href="#" rel="soccer" class="">1</a></li><li class="2"><a href="#" rel="golf">2</a></li><li class="3"><a href="#" rel="tennis">3</a></li><li class="4"><a href="#" rel="bball">4</a></li><li class="endr 5"><a href="#" rel="stadium">5</a></li>
-					</ul>
-				</div>
-			</div>
+			<!-- <div id="banners" class="[ clearfix ]"></div>
+			<div id="carouselnav">
+				<ul>
+					<li class="endl 1"><a href="#" rel="soccer" class="">1</a></li><li class="2"><a href="#" rel="golf">2</a></li><li class="3"><a href="#" rel="tennis">3</a></li><li class="4"><a href="#" rel="bball">4</a></li><li class="endr 5"><a href="#" rel="stadium">5</a></li>
+				</ul>
+			</div> -->
 
-			<div class="wrapper padHome">
-				<div id="main" class="roundedTop clearfix">
+			<div id="main" class="[ roundedTop ][ clearfix ]">
 
-					<div style="float:left;">
-						<div class="title">
-							<h3>Do you qualify?</h3>
+				<section>
+					<div class="[ wrapper ]">
+						<div class="[ row ][ xmall-8 ][ center ]">
+							<div class="[ title ][ column xmall-3 ]">
+								<h3>Pursue ambition</h3>
+							</div>
+							<div class="[ sub-text ][ column xmall-9 ]">
+								<p>Do you qualify for a sports scholarship at a university in the United States? Complete the Free Assessment form and we will evaluate your chances!</p>
+							</div>
 						</div>
 
-						<div class="sub-text">
-							Do you qualify for a sports scholarship at a university in the United States? Complete the Free Assessment form and we will evaluate your chances!
-						</div>
-						<div class="sub-button">
-							<a href="#" class="btn orange">Free Assessment</a>
-						</div>
 					</div>
+				</section>
 
-					<div id="left">
+				<section class="[ wrapper ][ row ]">
+
+					<div id="left" class="[ column xmall-12 medium-6 ]">
 						<div class="content-left rounded watermark">
 							<h2>University, sports and scholarships in the USA - This is what we do!</h2>
 							<iframe width="420" height="315" src="//www.youtube.com/embed/4sYU2pVDCfQ" allowfullscreen=""></iframe>
@@ -174,21 +172,9 @@
 							<p>To find out if you can qualify for a scholarship in the US, complete our <a href="http://www.csusa.co.uk/assessment"><strong>FREE ASSESSMENT</strong></a> and we'll evaluate your chances.</p>
 						</div>
 
-						<div class="content-left rounded top">
-							<h2>Do you qualify?</h2>
-							<p>Want to find out if we can help you participate in college sports in the US and get a sports scholarship? We thoroughly assess your sporting and academic background to see if you qualify for our services. Apply now, it's free!</p>
-							<p><a class="btn orange" href="/assessment/">Free Assessment</a></p>
-						</div>
-
-						<div class="content-left rounded top">
-							<h2>#PursueAmbition</h2>
-							<p><a href="http://www.facebook.com/collegescholarshipsusa" class="facebook">Like us on Facebook</a> <a href="http://twitter.com/CSUSA_tweets" class="twitter">Follow us on Twitter</a></p>
-							<p>Interested to know more about what's going on in college sports?</p>
-							<p>Add us on Facebook and Twitter to stay tuned with college sports and see how our clients are performing in the US!</p>
-						</div>
 					</div><!-- left -->
 
-					<div id="right">
+					<div id="right" class="[ column xmall-12 medium-6 ]">
 						<div class="content-left rounded top">
 							<h2>Soccer Showcase - Registration Open</h2>
 							<p><a href="/our-service/soccer-showcase/"><img src="images/homelogo_soccer.jpg" width="75" height="85" style="float:left;margin:0 20px 30px 0;" alt=" Soccer scholarships"></a>Our elite Soccer Showcase will take place in Stockholm, Sweden on November 20th, 21st and 22nd 2015. Registration is now open for both girls and boys. Our premium Showcase gives you the unique opportunity to play and shine in front of specially invited American soccer coaches. It is a fantastic way to be recruited and getting offered a soccer scholarship.</p>
@@ -210,7 +196,13 @@
 								</li>
 							</ul>
 						</div>
-						<div class="content-left rounded top">
+					</div><!-- right -->
+
+				</section>
+
+				<section class="">
+					<div class="[ wrapper ][ row ]">
+						<div class="[ column xmall-12 medium-6 ]">
 							<h2>American College Sports</h2>
 							<p>American university sports (referred to as college sports) is a fantastic way of combining education with high-level sports whilst getting university funded by: </p>
 							<ul class="splitList">
@@ -225,7 +217,8 @@
 							</ul>
 							<p>The phenomenon of college sports is difficult to grasp unless you have experienced it first-hand. In terms of the facilities, level of competition and scale, US college sports are on a par and in many cases surpass professional sports world-wide.</p>
 							<p>US college sports are the 2nd tier of sports, the feeder system into the professional game. The likes of Tiger Woods, John Isner, Michael Jordan, Mia Hamm, Clint Dempsey and many more were college athletes.</p>
-
+						</div>
+						<div class="[ column xmall-12 medium-6 ]">
 							<a href="/college-sports/soccer">
 								<img src="http://www.collegescholarshipsusa.com/images/site-design/homelogo_soccer.jpg" width="75" height="85" style="border: 0;margin-right:25px;" alt=" Soccer scholarships">
 							</a>
@@ -239,57 +232,67 @@
 								<img src="http://www.collegescholarshipsusa.com/images/site-design/homelogo_other.jpg" width="75" height="85" style="border: 0;" alt="Other sports scholarships">
 							</a>
 						</div>
-					</div><!-- right -->
-
-					<div class="content rounded clearfix top" id="cyclePartners">
-						<img src="images/partners_home.jpg" />
-						<img src="images/partners_home2.jpg"/>
-						<img src="images/partners_home3.jpg"/>
 					</div>
-				</div><!-- main -->
-			</div><!-- wrapper padHome -->
+				</section>
 
-			<footer class="footer clearfix">
+				<section class="[ wrapper ] content">
+					<img src="images/partners_home.jpg" />
+					<img src="images/partners_home2.jpg"/>
+					<img src="images/partners_home3.jpg"/>
+				</section>
+			</div><!-- main -->
 
-				<div class="footerWrapper">
-					<div class="footerCol first">
+			<!-- <div class="[ button--action ][ sub-button ]">
+				<a href="#" class="[ btn orange ]">Free Assessment</a>
+			</div> -->
+
+			<footer class="[ footer ][ padding--top-bottom ]">
+
+				<div class="[ wrapper ][ row ][ margin-bottom ]">
+					<div class="[ column xmall-12 medium-6 ]">
 						<h4>Navigation</h4>
-						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#college-sports">College Sports</a></li>
-							<li><a href="#our-service">Our Service</a></li>
-							<li><a href="#news">News</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
+						<div class="[ row ]">
+							<div class="[ column xmall-12 medium-6 ]">
+								<a href="#">Home</a><br />
+								<a href="#about">About</a><br />
+								<a href="#college-sports">College Sports</a><br />
+							</div>
+							<div class="[ column xmall-12 medium-6 ]">
+								<a href="#our-service">Our Service</a><br />
+								<a href="#news">News</a><br />
+								<a href="#contact">Contact</a><br />
+							</div>
+						</div>
 					</div>
 
-					<div class="footerCol">
+					<div class="[ column xmall-12 medium-6 ]">
 						<h4>College Sports</h4>
-						<ul>
-							<li><a href="#">Tennis Scholarships in the USA</a></li>
-							<li><a href="#">Tennis Scholarships in the USA</a></li>
-							<li><a href="#">Tennis Scholarships in the USA</a></li>
-							<li><a href="#">Tennis Scholarships in the USA</a></li>
-							<li><a href="#">Tennis Scholarships in the USA</a></li>
-						</ul>
-					</div>
-
-					<div class="footerCol">
-						<h4>Get in Touch</h4>
-						<ul>
-							<li><a href="/contact">Contact CSUSA</a></li>
-							<li><a href="http://twitter.com/CSUSA_tweets">CSUSA on Twitter</a></li>
-							<li><a href="http://www.facebook.com/collegescholarshipsusa">CSUSA on Facebook</a></li>
-							<li><a href="#" class="mailingList" title="Sign-up to the CSUSA mailing list">Newsletter Sign-Up</a></li>
-						</ul>
+						<div class="[ row ]">
+							<div class="[ column xmall-12 medium-6 ]">
+								<a href="#">Tennis Scholarships in the USA</a><br />
+								<a href="#">Tennis Scholarships in the USA</a><br />
+								<a href="#">Tennis Scholarships in the USA</a><br />
+							</div>
+							<div class="[ column xmall-12 medium-6 ]">
+								<a href="#">Tennis Scholarships in the USA</a><br />
+								<a href="#">Tennis Scholarships in the USA</a><br />
+							</div>
+						</div>
 					</div>
 				</div>
 
-				<div class="footerWrapper clearfix">
-					<div class="copy">
-						View the site in <a href="http://www.collegescholarshipsusa.com/">English</a>, <a href="http://www.collegescholarshipsusa.com/no/">Norwegian</a>, <a href="http://www.collegescholarshipsusa.com/de/">German</a>, <a href="http://www.collegescholarshipsusa.com/fr/">French</a>, <a href="http://www.collegescholarshipsusa.com/es/">Spanish</a> or <a href="http://www.collegescholarshipsusa.com/dk/">Danish</a>.<br/><br/>
-						&copy; College Scholarships USA Ltd. All rights reserved. Site built by <a href="http://www.class-creative.com" title="Birmingham Web Design company Class Creative">Birmingham web design</a> company Class Creative.
+				<div class="[ wrapper ]">
+					<div class="[ xmall-4 ][ center ]">
+						<hr>
+					</div>
+				</div>
+
+				<div class="[ wrapper ]">
+					<div class="[ text-center ]">
+						<p>
+							View the site in <a href="http://www.collegescholarshipsusa.com/">English</a>, <a href="http://www.collegescholarshipsusa.com/no/">Norwegian</a>, <a href="http://www.collegescholarshipsusa.com/de/">German</a>, <a href="http://www.collegescholarshipsusa.com/fr/">French</a>, <a href="http://www.collegescholarshipsusa.com/es/">Spanish</a> or <a href="http://www.collegescholarshipsusa.com/dk/">Danish</a>.<br />
+							&copy; College Scholarships USA Ltd. All rights reserved. Site built by <a href="http://www.class-creative.com" title="Birmingham Web Design company Class Creative">Birmingham web design</a> company Class Creative.
+						</p>
 					</div>
 				</div>
 
@@ -308,7 +311,7 @@
 			imgToSvg();
 
 			var t;
-			t= setInterval("changePage()",8000);
+			t = setInterval("changePage()", 8000);
 
 			function resetCount()
 			{

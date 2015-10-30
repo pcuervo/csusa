@@ -3,17 +3,21 @@
 \*------------------------------------*/
 
 header {
-	width:100%;
-	position:fixed; left: 0;
-	background: #011a21;
-	z-index:1000;
+	width: 100%; height: 90px;
+	padding: 10px 0;
+	background: @dark;
+	position: fixed; top: 0; left: 0;
+	z-index: @zIndex-10;
 }
+
 #global-header .helper {
-	width:100%;
-	background:url(images/nav_gradient.jpg) 0 0 repeat-x;
-	z-index:1000;
+	width: 100%;
 }
 
 #global-header #linkhome { float:left; }
 #global-header #linkhome a,
 #global-header #linkhome img { display:block; }
+
+.logo{
+	width: 62px; height: auto;
+}
