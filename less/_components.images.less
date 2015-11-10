@@ -24,4 +24,23 @@ img{ border: 0; }
 	float:left;
 }
 
-#cyclePartners img{ margin:10px; }
+
+//
+// Background Images
+// --------------------------------------------------
+.bg-image{
+	display: block;
+	width: 100%; height: 100%;
+	background-size: cover !important;
+	background-position: center center;
+	position: relative;
+	overflow: hidden;
+}
+
+.bg-image__screen:after{
+	content: '';
+	width: 100%; height: 100%;
+	background-color: #090A0A;
+	opacity: 0.3;
+	position: absolute; top: 0; left: 0;
+}

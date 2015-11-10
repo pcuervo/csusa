@@ -22,6 +22,8 @@ function imgToSvg(){
 
             // Remove any invalid XML tags as per http://validator.w3.org
             $svg = $svg.removeAttr('xmlns:a');
+            $svg = $svg.removeAttr('width');
+            $svg = $svg.removeAttr('height');
 
             // Replace image with new SVG
             $img.replaceWith($svg);
