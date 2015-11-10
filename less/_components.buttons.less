@@ -2,27 +2,17 @@
 	#Buttons
 \*------------------------------------*/
 
-.btn{
-	display: block;
-	min-width:240px; max-width:330px;
-	padding: 15px 0; margin: 0 auto 15px auto;
-	color: white !important;
-	font-weight: 500; letter-spacing: .8px;
-	text-transform:uppercase; text-align: center;  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4); text-decoration: none !important;
-	background-image: url(images/site-design/btn_overlay.png); background-position: 0 50%; background-repeat: repeat-x;
-	position: relative;
-	cursor:pointer;
+.button{
+	padding: 8px 14px; border: 1px solid transparent;
+	color: @primary;
+	font-weight: 400; font-size: 110%;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4); text-decoration: none !important;
+	cursor: pointer;
 
-	-webkit-transition: opacity .2s;
-	-moz-transition: opacity .2s;
-	-o-transition: opacity .2s;
-	transition: opacity .2s;
-
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
+	.transition;
+	.border-radius(6px);
 }
-.btn:hover{ text-decoration: none !important; }
+
 
 /**
  * Button colors
@@ -36,6 +26,39 @@
 	background-color: #e95c41;
 }
 .btn.orange:hover{ background-color: #ea644a; }
+
+.button--light{
+	background: @light;
+	color: @dark;
+}
+
+.button--dark{
+	background: @dark;
+	color: @light;
+}
+
+.button--primary{
+	background: @primary;
+	color: @light;
+}
+
+.button--secondary{
+	background: @secondary;
+	color: @light;
+}
+
+
+
+
+/**
+ * Button styles
+**/
+
+.button--hollow{
+	background: transparent;
+	border-width: 1px; border-style: solid;
+}
+
 
 /**
  * Button sizes
@@ -63,9 +86,15 @@
 }
 .btnSmall:hover{ text-decoration: none !important; }
 
+
 /**
  * Button mixes
 **/
+
+.button--light.button--hollow{
+	border-color: @light;
+	color: @light;
+}
 
 .btnSmall.orange{
 	border-top: 1px solid #ee836f; border-bottom: 1px solid #ee836f;
