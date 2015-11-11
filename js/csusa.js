@@ -1,38 +1,11 @@
 $(window).load(function(){
 
-    show_nav = false;
-
-    $('li.parent').children('ul').hide();
-
-    if($('#global-nav li a.active').parent('li').hasClass('parent')){
-        show_nav = true;
-        $('#global-header .helper>.wrapper').css('paddingBottom','48px');
-    $('#global-nav li.parent a.active').parent("li").find('ul').fadeIn('fast');
-    $('#global-nav li.parent a.active').parent("li").find('ul').css('display','block');
-    }
-
-    $('#global-nav>ul>li.parent').hoverIntent(function(){
-        target = $(this);
-        target.data('hovering',true);
-
-        $('#global-header .helper .wrapper').stop(true).animate({
-            paddingBottom: '48px'
-        }, 200);
-
-        show_new_subnav(target);
-
+    $('#global-nav li.parent').hoverIntent(function(){
+        $('header').addClass('opened');
+        $(this).find('.group').addClass('opened');
     }, function(){
-        if(!show_nav){
-            $('li.parent').children('ul').hide();
-                $('#global-header .helper .wrapper').stop(true).animate({
-                    paddingBottom: '0'
-                },200,function(){
-                });
-            }else{
-            $('li.parent').children('ul').hide();
-            $('#global-nav li.parent a.active').parent("li").find('ul').fadeIn('fast');
-            $('#global-nav li.parent a.active').parent("li").find('ul').css('display','block');
-        }
+        $('header').removeClass('opened');
+        $('.group').removeClass('opened');
     });
 
     $('.profile-section').hide();
@@ -97,23 +70,6 @@ $(window).load(function(){
     });
 
 });
-
-function show_new_subnav(target){
-    other_subnav_visible = false;
-    if($('li.parent').children('ul').is(':visible')){
-        other_subnav_visible = true;
-    }
-    if(other_subnav_visible){
-
-        if(!target.find('ul').is(':visible')){
-            $('li.parent>ul:visible').fadeOut('fast',function(){
-     target.find('ul').fadeIn('fast');target.find('ul').parent('ul').css('display','block');
-            });
-        }
-    }else{
-        target.find('ul').fadeIn('fast');target.find('ul').parent('ul').css('display','block');
-    }
-}
 
 function set_lang(target, site_url){
     url2='/site/set-lang/'+ target +"/";

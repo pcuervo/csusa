@@ -59,7 +59,7 @@
 			<!-- =================================================
 			==== HEADER
 			================================================== -->
-			<header>
+			<header class="[ js-header ][ ]">
 				<div class="[ wrapper ][ row ]">
 					<div class="[ column xmall-5 ]">
 						<a class="[ block ]" href="/en">
@@ -76,7 +76,24 @@
 									</div>
 									<fb:like href="http://www.facebook.com/collegescholarshipsusa" send="false" layout="button_count" width="80" show_faces="false" font="arial"></fb:like>
 
-									<img class="[ ]" src="images/United_Kingdom(Great_Britain).png" alt="English"/>
+									<div id="country-select">
+										<form action="server-side-script.php">
+											<select id="country-options" name="country-options">
+												<option selected="selected" value="english">
+													english
+												</option>
+												<option value="español">español</option>
+												<option value="dansk">dansk</option>
+												<option value="deutsch">deutsch</option>
+												<option value="français">français</option>
+												<option value="norsk">norsk</option>
+												<option value="svenska">svenska</option>
+											</select>
+											<input value="Select" type="submit" />
+										</form>
+									</div>
+
+									<!-- <img class="[ ]" src="images/United_Kingdom(Great_Britain).png" alt="English"/> -->
 								</div><!-- language_select -->
 
 								<div class="[ social-icons ][ pull-right ][ margin-right--small ]">
@@ -100,24 +117,24 @@
 						<div class="[ helper ]">
 							<div class="[ group clearfix ]">
 								<div id="global-nav" class="[ relative ]">
-									<ul class="branded group [ pull-right ]">
+									<ul class="[ pull-right ]">
 										<li class="[ parent ][ pull-left ]" id="nav-about">
 											<a href="/en">About</a>
-											<ul class="group">
+											<ul class="[ group ]">
 												<li><a href="/about">About</a></li>
 												<li><a href="/team">CSUSA Team</a></li>
 											</ul>
 										</li>
 										<li class="[ parent ][ pull-left ]" id="nav-college-sports">
 											<a href="/college-sports">College Sports</a>
-											<ul class="group">
+											<ul class="[ group ]">
 												<li><a href="college-sports/{url_title}">College Sports</a></li>
 												<!--{/exp:channel:entries} -->
 											</ul>
 										</li>
 										<li class="[ parent ][ pull-left ]" id="nav-service">
 											<a href="/our-service">Our Service</a>
-											<ul class="group">
+											<ul class="[ group ]">
 												<!-- {exp:channel:entries channel="our_service" dynamic="no" status="open"} -->
 												<li><a href="/our-service/">Our Service</a></li>
 												<!-- {/exp:channel:entries} -->
@@ -298,131 +315,133 @@
 					</div>
 				</section>
 
-				<section class="[ wrapper ][ content ][ padding--top-bottom--large ]">
-					<h2>University teams we have worked with</h2>
-					<div class="[ row ]">
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/binghamton.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/boston_college.gif" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/buffalo.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/cal_berkeley.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/central_florida.jpg" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/cincinnati.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/clemson.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/coastal.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/creighton_u.jpg" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/dayton.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/duke.jpg" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/duquesne.jpg" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ clear--large ]"></div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/florida_gators.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/fordham_u.jpg" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/gamecocks.jpg" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/hofstra_u.jpg" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/kentucky.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/la_salle_university.jpg" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/mercyhurst_u.jpg" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/mizzou.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/new_mexico.gif" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/north_dakota.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/northeastern.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/ohio_state.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ clear--large ]"></div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/oklahoma_state.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/oklahoma.gif" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/rhode_island.jpg" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/san_diego_state_u.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/san_francisco.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/south_florida.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/st_johns.gif" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/stony_brook.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/syracuse.gif" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/u_conn.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/ucla.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/unc_chapel_hill.jpg" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ clear--large ]"></div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/university_of_miami.jpg" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/uwm.png" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/florida_atlantic_u.jpg" class="[ image-responsive ]" alt="">
-						</div>
-						<div class="[ column xmall-1 ][ margin-bottom--small ]">
-							<img src="images/universities-logos/stetson_u.png" class="[ image-responsive ]" alt="">
+				<section class="[ bg-light ][ content ][ padding--top-bottom--large ]">
+					<div class="[ wrapper ]">
+						<h2>University teams we have worked with</h2>
+						<div class="[ row ]">
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/binghamton.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/boston_college.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/buffalo.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/cal_berkeley.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/central_florida.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/cincinnati.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/clemson.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/coastal.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/creighton_u.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/dayton.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/duke.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/duquesne.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ clear--large ]"></div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/florida_gators.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/fordham_u.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/gamecocks.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/hofstra_u.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/kentucky.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/la_salle_university.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/mercyhurst_u.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/mizzou.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/new_mexico.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/north_dakota.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/northeastern.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/ohio_state.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ clear--large ]"></div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/oklahoma_state.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/oklahoma.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/rhode_island.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/san_diego_state_u.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/san_francisco.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/south_florida.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/st_johns.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/stony_brook.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/syracuse.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/u_conn.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/ucla.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/unc_chapel_hill.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ clear--large ]"></div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/university_of_miami.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/uwm.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/florida_atlantic_u.png" class="[ image-responsive ]" alt="">
+							</div>
+							<div class="[ column xmall-1 ][ margin-bottom--small ]">
+								<img src="images/universities-logos/stetson_u.png" class="[ image-responsive ]" alt="">
+							</div>
 						</div>
 					</div>
 				</section>

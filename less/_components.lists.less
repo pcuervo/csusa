@@ -15,14 +15,20 @@ ul{
 	margin: 0;
 	list-style:none;
 }
-#global-nav ul.branded ul {
-	display:none;
-	width:915px;
-	position: absolute; top:65px; left: 0;
-	text-align:right;
+ul.group {
+	width: 177%;
+	height: 0;
+	position: absolute; left: -77%;
+	overflow: hidden;
+	.transition;
 }
-#global-nav ul.branded ul li {
-	padding: 0; margin: 0;
+ul.group.opened {
+	height: 40px;
+	.transition;
+}
+
+ul.group li {
+	// padding: 0; margin: 0;
 	float: right;
 }
 
