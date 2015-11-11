@@ -13,8 +13,10 @@
 }
 
 .icon{
-	display: inline-block; vertical-align: middle;
-	margin-right: .2em; margin-left: .2em;
+  display: inline-block; vertical-align: middle;
+  height: auto !important;
+  margin-right: .2em; margin-left: .2em;
+  .transition;
 }
 
 
@@ -25,7 +27,45 @@
     #SIZES
 \*------------------------------------*/
 
-.icon--iconed{ width: 16px !important; }
+.icon--responsive{
+    width: 100%; height: auto;
+}
+
+.icon--iconed{
+    width: 16px !important;
+
+    @media (min-width: @small){
+        //width: 8em;
+    }
+}
+
+.icon--iconed--mini{
+    width: 20px !important;
+
+    @media (min-width: @medium){
+        //width: 8em;
+    }
+}
+
+.icon--iconed--micro{
+    width: 10px !important;
+
+    @media (min-width: @large){
+        //width: 8em;
+    }
+}
+
+.icon--feature{
+    width: 6em !important;
+
+    @media (min-width: @xlarge){
+        width: 8em !important;
+    }
+}
+
+.icon--logo{
+    width: 150px; height: auto;
+}
 
 
 
@@ -33,8 +73,29 @@
 
 
 /*------------------------------------*\
-	#COLOR
+  #COLOR
 \*------------------------------------*/
 
-.icon path,
-.icon polygon{ fill: currentColor; }
+/**
+ * Fill
+**/
+.icon--fill path,
+.icon--fill line,
+.icon--fill circle,
+.icon--fill ellipse,
+.icon--fill polyline,
+.icon--fill polygon{ fill: currentColor; }
+
+/**
+ * Stroke
+**/
+.icon--stroke{ stroke-width: 0.7; }
+
+.icon--thickness-2{ stroke-width: 2; }
+
+.icon--stroke path,
+.icon--stroke line,
+.icon--stroke circle,
+.icon--stroke ellipse,
+.icon--stroke polyline,
+.icon--stroke polygon{ stroke: currentColor; }

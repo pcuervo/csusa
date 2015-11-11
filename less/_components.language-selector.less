@@ -20,7 +20,10 @@
 
 /* JS-created definition list */
 
-#target{ margin: 0; }
+#target{
+	margin: 0;
+	position: relative;
+}
 
 .dropdown dd { position: relative; }
 
@@ -91,3 +94,9 @@
 
 .dropdown dd ul li a:hover { background-color: rgba(255,255,255,.1); }
 .dropdown dd ul li a:hover em { color: #fff; }
+
+.dropdown__arrow{
+	border: 2px solid @dark;
+	position: absolute; right: 2px; bottom: -1px;
+
+}
