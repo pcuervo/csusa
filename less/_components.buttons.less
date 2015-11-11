@@ -40,6 +40,10 @@
 .button--primary{
 	background: @primary;
 	color: @light;
+
+	&:hover{
+		background: darken(@primary, 10%);
+	}
 }
 
 .button--secondary{
@@ -63,6 +67,18 @@
 	padding: 0; border: none;
 	background: transparent;
 	text-decoration: underline; .text-shadow (0 0 0 rgba(0, 0, 0, 0));
+}
+
+.button--action{
+	border: none;
+	text-align: center;
+	position: fixed; left: 0; bottom: 5px;
+
+	@media (min-width: @medium) {
+		width: 100%;
+		.border-radius(0);
+		bottom: 0;
+	}
 }
 
 /**
@@ -122,11 +138,6 @@
 	-moz-box-shadow: 0px 1px 0 #a9422e, 0px -1px 0 #a9422e;
 }
 .btnSmall.orange:hover{ background-color: #ea644a; }
-
-.sub-button{
-	width:240px;
-	float:right;
-}
 
 .selectBtn{
 	padding:6px 20px; margin:5px 10px;
