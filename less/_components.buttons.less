@@ -3,6 +3,7 @@
 \*------------------------------------*/
 
 .button{
+	height: 40px;
 	padding: 8px 14px; border: 1px solid transparent;
 	color: @primary;
 	font-weight: 400; font-size: 110%;
@@ -64,6 +65,7 @@
 }
 
 .button--ink{
+	height: 20px;
 	padding: 0; border: none;
 	background: transparent;
 	text-decoration: underline; .text-shadow (0 0 0 rgba(0, 0, 0, 0));
@@ -78,6 +80,10 @@
 		width: 100%;
 		.border-radius(0);
 		bottom: 0;
+
+		&:hover{
+			height: 55px;
+		}
 	}
 }
 
