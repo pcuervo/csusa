@@ -20,6 +20,8 @@
 
 /* JS-created definition list */
 
+#target{ margin: 0; }
+
 .dropdown dd { position: relative; }
 
 .dropdown a {
@@ -27,54 +29,35 @@
 	outline: 0;
 	font: 12px Arial, Helvetica, sans-serif;
 	display: block;
-	width: 130px;
+	width: 32px; height: 32px;
 	overflow: hidden;
 }
+
+.dropdown a img{ display: block; }
 
 .dropdown dt a {
 }
 
 .dropdown dt a.active {
-	background: #db5e18;
-	-webkit-border-bottom-left-radius: 0;
-	-webkit-border-bottom-right-radius: 0;
-	-moz-border-radius-bottomleft: 0;
-	-moz-border-radius-bottomright: 0;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-	border-bottom: 1px dotted #676768;
-	-moz-box-shadow: 0 3px 7px rgba(0,0,0,.5);
-	-webkit-box-shadow: 0 3px 7px rgba(0,0,0,.5);
-	box-shadow: 0 3px 7px rgba(0,0,0,.5);
-	color: #fff;
 }
 
 .dropdown dd ul {
-	background: #814f33;
-	border: 1px solid #676768;
-	color: #C5C0B0;
+	background: @secondary;
+	color: @light;
 	display: none;
 	position: absolute;
 	z-index: 999;
 	top: 0;
-	left: 0;
-	padding: 2px 0 5px 0;
+	left: -45px;
+	padding: 5px;
 	list-style: none;
 	border-top: none;
 	margin: 0;
-	-webkit-border-bottom-right-radius: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-	-moz-border-radius-bottomright: 5px;
-	-moz-border-radius-bottomleft: 5px;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	-moz-box-shadow: 0 3px 7px rgba(0,0,0,.5);
-	-webkit-box-shadow: 0 3px 7px rgba(0,0,0,.5);
-	box-shadow: 0 3px 7px rgba(0,0,0,.5);
+	.drop-shadow(0 3px 7px rgba(0,0,0,.5));
 }
 
 .dropdown dd ul li a {
-	padding: 2px 10px;
+
 }
 
 .dropdown dd ul li a span,
