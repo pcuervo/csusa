@@ -32,3 +32,12 @@ function imgToSvg(){
 
     });
 } //imgToSvg
+
+
+/*------------------------------------*\
+    #TOGGLE FUNCTIONS
+\*------------------------------------*/
+
+function toggleClass(element, classToToggle){
+    element.toggleClass(classToToggle);
+}

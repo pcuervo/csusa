@@ -17,7 +17,9 @@ header {
 }
 
 header.opened{
-	height: 140px;
+	@media (min-width: @medium) {
+		height: 140px;
+	}
 }
 
 #global-header .helper {
@@ -29,5 +31,10 @@ header.opened{
 #global-header #linkhome img { display:block; }
 
 .logo{
-	width: 62px; height: auto;
+	width: 36px; height: auto;
+	.transition;
+
+	@media (min-width: @medium) {
+		width: 62px;
+	}
 }

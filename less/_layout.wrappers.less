@@ -17,7 +17,13 @@ body{
 
 .container{ min-height: 100%; }
 
-#main{ margin-top: 90px; }
+#main{
+	margin-top: 60px;
+
+	@media (min-width: @medium) {
+		margin-top: 90px;
+	}
+}
 
 /**
  * Maintains everything at the same widht
