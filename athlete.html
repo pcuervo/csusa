@@ -318,6 +318,9 @@
 
 				<a href="/contact" class="[ button button--action button--primary ][ inline-block ]">Contact Us</a>
 
+				<div id="videos" style="display:none;"></div>
+				<div id="ratingCat" style="display:none;"></div>
+
 				<footer class="[ footer ][ padding--top-bottom--large ][ color-light ][ bg-dark ]">
 
 					<div class="[ wrapper ][ row ][ margin-bottom--large ]">
@@ -397,11 +400,6 @@
 					return false;
 				});
 
-				$('.videos').hoverIntent(function(){
-					$(this).find('.overlay').addClass('hover');
-				},function(){
-					$(this).find('.overlay').removeClass('hover');
-				});
 			});
 		</script>
 
