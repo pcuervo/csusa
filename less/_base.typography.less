@@ -235,8 +235,14 @@ blockquote{
 }
 
 .sub-text{
+	margin-bottom: @unit;
+	background: @light;
+	.drop-shadow (0px 1px 7px 2px rgba(0, 0, 0, 0.5));
+	overflow: hidden;
 
+	padding: @unit;
 }
+.sub-text p{ overflow: hidden; }
 
 .profileTitle{
 	margin-top:5px;
