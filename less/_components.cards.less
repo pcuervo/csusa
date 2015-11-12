@@ -32,7 +32,20 @@
 }
 
 .card--small .card__text{
-	max-height: 100px;
-	padding-top: (@unit/2); padding-right: (@unit*1.5); padding-bottom: (@unit/2); padding-left: 0;
+	max-height: 105px;
+	padding: (@unit/2);
 	overflow: hidden;
+
+	@media (min-width: @medium) {
+		padding-top: (@unit/2); padding-right: (@unit*1.5); padding-bottom: (@unit/2); padding-left: 0;
+	}
+}
+
+.card--small .card__link{
+	padding-left: (@unit/2);
+	position: absolute; bottom: (@unit/2);
+
+	@media (min-width: @medium) {
+		padding-left: 0;
+	}
 }
