@@ -2,9 +2,6 @@ $(window).load(function(){
 
     show_nav = false;
     $('li.parent').children('ul').hide();
-    if($(".mainBanners").length>0){
-        $(".mainBanners").cycle({fx:'scrollUp',delay: 3500});
-    }
     if($('#global-nav li a.active').parent('li').hasClass('parent')){
         show_nav = true;
         $('#global-header .helper>.wrapper').css('paddingBottom','48px');
