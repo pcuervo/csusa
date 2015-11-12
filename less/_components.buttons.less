@@ -74,10 +74,13 @@
 .button--action{
 	border: none;
 	text-align: center;
-	position: fixed; left: 0; bottom: 5px;
+	position: fixed; bottom: 20px; left: 50%;
 
-	@media (min-width: @medium) {
+	.translate(-50%, 0);
+
+	@media (min-width: @large) {
 		width: 100%;
+		bottom: 10px;
 		.border-radius(0);
 		bottom: 0;
 
