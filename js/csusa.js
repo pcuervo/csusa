@@ -1,12 +1,10 @@
 $(window).load(function(){
 
     show_nav = false;
-    $('li.parent').children('ul').hide();
     if($('#global-nav li a.active').parent('li').hasClass('parent')){
         show_nav = true;
-        $('#global-header .helper>.wrapper').css('paddingBottom','48px');
-        $('#global-nav li.parent a.active').parent("li").find('ul').fadeIn('fast');
-        $('#global-nav li.parent a.active').parent("li").find('ul').css('display','block');
+        $('header').addClass('opened');
+        $(this).next('.group').addClass('opened');
     }
 
     $('.profile-section').hide();

@@ -135,7 +135,7 @@
 											</ul>
 										</li>
 										<li class="[ parent ][ pull-left ]" id="nav-service">
-											<a href="/our-service">Our Service</a>
+											<a class="[ active ]" href="/our-service">Our Service</a>
 											<ul class="[ group ]">
 												<!-- {exp:channel:entries channel="our_service" dynamic="no" status="open"} -->
 												<li><a href="/our-service/">Our Service</a></li>
@@ -169,7 +169,9 @@
 						</div>
 
 						<div class="[ mainCol ][ card ]">
-							<img class="[ image-responsive ]" src="http://www.collegescholarshipsusa.com/images/article_tennis.jpg" alt="" width="643" height="209"  />
+							<div class="[ mainBanners ]">
+								<img class="[  ]" src="http://www.collegescholarshipsusa.com/images/article_tennis.jpg" alt="" width="643" height="209"  />
+							</div>
 							<div class="[ card__text ]">
 								<p>Zack Evenden is doing extremely well in his first year of college tennis and took his team, Cowley College, deep into the NJCAA-Nationals. Zack had an equally impressive individual season, earning a ranking of #5 in the nation. He earned the extremely prestigious All-American award. </p>
 
@@ -313,7 +315,6 @@
 		<script type='text/javascript' src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
 		<script type='text/javascript' src='http://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
 		<script type='text/javascript' src='js/jquery-plugins.js'></script>
-		<script type='text/javascript' src='js/jquery.cycle.all.min.js'></script>
 		<script type='text/javascript' src='js/csusa.js'></script>
 		<script type='text/javascript' src='js/functions.js'></script>
 
@@ -328,6 +329,13 @@
 				arrows: false,
 				dots: true,
 				mobileFirst: true
+			});
+			$('.mainBanners').slick({
+				arrows: false,
+				dots: false,
+				mobileFirst: true,
+				vertical: true,
+				autoplay: true
 			});
 
 
