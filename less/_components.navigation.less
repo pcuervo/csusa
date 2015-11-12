@@ -12,6 +12,16 @@
 	text-transform: uppercase; text-decoration:none;
 	font-size: 14px; font-weight:normal;
 	color: @light;
+	.transition;
+
+	@media (min-width: @large) {
+		padding: 12px 10px 16px 10px;
+	}
+
+	@media (min-width: @xlarge) {
+		padding: 12px 14px 16px 14px;
+	}
+
 }
 #global-nav a:hover { color: #fff; }
 #global-nav a.active { color: #ea6c53; }

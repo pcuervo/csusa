@@ -1,13 +1,5 @@
 $(window).load(function(){
 
-    $('#global-nav li.parent').hoverIntent(function(){
-        $('header').addClass('opened');
-        $(this).find('.group').addClass('opened');
-    }, function(){
-        $('header').removeClass('opened');
-        $('.group').removeClass('opened');
-    });
-
     $('.profile-section').hide();
     $('#section1').show().addClass('active');
 

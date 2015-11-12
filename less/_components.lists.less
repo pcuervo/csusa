@@ -12,16 +12,21 @@ ul{
 }
 
 .global-nav__ul {
-	width: 666%; max-height: 0;
+	width: 100%; max-height: 0;
 	margin: 0;
-	position: relative; left: -533%;
+	position: absolute; top: 60px; left: 0;
 	overflow: hidden;
 	.clearfix;
 	.transition;
 
 	@media (min-width: @medium) {
-		width: auto; height: auto; max-height: auto;
-		left: 0;
+		// width: 191%;
+		top: 90px; // left: -81%;
+	}
+
+	@media (min-width: @large) {
+		width: auto; height: auto; max-height: none;
+		position: relative; top: 0; left: 0;
 		float: right;
 	}
 }
@@ -30,7 +35,7 @@ ul{
 	max-height: 700px;
 	overflow: visible;
 
-	@media (min-width: @medium) {
+	@media (min-width: @large) {
 		max-height: auto
 	}
 }
@@ -38,14 +43,14 @@ ul{
 
 ul.group {
 	width: 100%; max-height: 0;
-	border-top: 1px solid @dark;
+	border-top: 2px solid @dark;
 	background: @dark;
 	position: absolute; left: 0;
 	overflow: hidden;
 	.transition;
 	.clearfix;
 
-	@media (min-width: @medium) {
+	@media (min-width: @large) {
 		width: 177%;
 		border: none;
 		left: -77;
@@ -53,13 +58,13 @@ ul.group {
 }
 ul.group.opened {
 	max-height: 300px;
-	border-top: 1px solid @secondary;
+	border-top: 2px solid @secondary;
 }
 
 ul.group li {
 	float: left;
 
-	@media (min-width: @medium) {
+	@media (min-width: @large) {
 		float: right;
 	}
 }
