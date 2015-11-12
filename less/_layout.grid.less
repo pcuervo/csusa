@@ -31,7 +31,19 @@
 \*------------------------------------*/
 .row{
 	.clearfix;
-	margin-left: -16px; margin-right: -16px;
+	margin-left: -2px; margin-right: -2px;
+
+	@media (min-width: @small) {
+		padding-left: -8px; padding-right: -8px;
+	}
+
+	@media (min-width: @medium) {
+		padding-left: -12px; padding-right: -12px;
+	}
+
+	@media (min-width: @large) {
+		padding-left: 16px; padding-right: 16px;
+	}
 }
 
 
@@ -42,7 +54,21 @@
     #12 COLUMNS
 \*------------------------------------*/
 
-.column{ padding-right: 16px; padding-left: 16px; }
+.column{
+	padding-right: 2px; padding-left: 2px;
+
+	@media (min-width: @small) {
+		padding-left: 8px; padding-right: 8px;
+	}
+
+	@media (min-width: @medium) {
+		padding-left: -12px; padding-right: -12px;
+	}
+
+	@media (min-width: @large) {
+		padding-left: 16px; padding-right: 16px;
+	}
+}
 
 
 /**
