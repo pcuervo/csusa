@@ -74,15 +74,29 @@ ul.group li {
 }
 
 .mainList{
-	margin: 0; padding: 0;
-	list-style: none;
+	margin-top: @unit;
+	.clearfix;
 }
 .mainList li{
-	width:165px; height:260px;
-	margin: 0 15px 0 40px;
+	width: 100%;
+	padding: 0 @unit; margin-bottom: @unit;
+	text-align: center;
 	float: left;
+
+	@media (min-width: @small) {
+		width: 50%;
+		text-align: left;
+	}
+
 }
-.mainList li.end{ margin: 0 0 0 40px; }
+
+.mainList li a{ display: block; }
+
+.mainList li img{
+	display: block;
+	max-width: 100%; height: auto;
+	margin-left: auto; margin-right: auto;
+}
 
 .subList{
 	padding: 0;

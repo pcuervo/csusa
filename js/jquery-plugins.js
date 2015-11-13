@@ -591,9 +591,9 @@ $(document).ready(function() {
 		var selected = source.find("option:selected");
 		var options = $("option", source);
 		$("#country-select").append('<dl id="target" class="dropdown"></dl>');
-		$("#target").append('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Filled_Icons" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" class="[ svg icon icon--iconed--micro icon--fill ][ dropdown__arrow ][ color-light ] replaced-svg"><path d="M23.936,2.255C23.848,2.098,23.681,2,23.5,2h-23C0.32,2,0.153,2.098,0.065,2.255c-0.089,0.157-0.085,0.35,0.008,0.504  l11.5,19C11.663,21.908,11.826,22,12,22s0.337-0.092,0.428-0.241l11.5-19C24.021,2.604,24.025,2.412,23.936,2.255z"></path></svg><dt class="' + selected.val() + '"><a href="#"><img class="[ ]" src="images/flags/' + selected.val() + '.png" alt="' + selected.val() + '"/></a></dt>');
+		$("#target").append('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Filled_Icons" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" class="[ svg icon icon--iconed--micro icon--fill ][ dropdown__arrow ][ color-light ] replaced-svg"><path d="M23.936,2.255C23.848,2.098,23.681,2,23.5,2h-23C0.32,2,0.153,2.098,0.065,2.255c-0.089,0.157-0.085,0.35,0.008,0.504  l11.5,19C11.663,21.908,11.826,22,12,22s0.337-0.092,0.428-0.241l11.5-19C24.021,2.604,24.025,2.412,23.936,2.255z"></path></svg><dt class="' + selected.val() + '"><a href="#"><img class="[ ]" src="/images/site-desgin/' + selected.val() + '.png" alt="' + selected.val() + '"/></a></dt>');
 		$("#target").append('<dd><ul></ul></dd>');
 		options.each(function(){
-			$("#target dd ul").append('<li class="' + $(this).val() + '"><a href="' + $(this).attr("title") + '"><img class="[ ]" src="images/flags/' + $(this).text() + '.png" alt="' + $(this).text() + '"/><em>' + $(this).text() + '</em></a></li>');
+			$("#target dd ul").append('<li class="' + $(this).val() + '"><a href="' + $(this).attr("title") + '"><img class="[ ]" src="/images/site-desgin/flags/' + $(this).text() + '.png" alt="' + $(this).text() + '"/><em>' + $(this).text() + '</em></a></li>');
 		});
 	}
