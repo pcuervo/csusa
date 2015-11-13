@@ -4,7 +4,7 @@ $(window).load(function(){
     if($('#global-nav li a.active').parent('li').hasClass('parent')){
         show_nav = true;
         $('header').addClass('opened');
-        $(this).next('.group').addClass('opened');
+        $('#global-nav li a.active').next('.group').addClass('opened');
     }
 
     $('.profile-section').hide();
