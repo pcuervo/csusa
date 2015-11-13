@@ -174,13 +174,7 @@
 
 				<div class="[ wrapper ]">
 
-					<div class="[ margin-top ][ clearfix ][ row ][ js-packery ]"
-						data-packery-options='{
-							"itemSelector": "article",
-							"gutter": 0,
-							"columnWidth": "article"
-						}'
-					>
+					<div class="[ margin-top ][ clearfix ][ row ][ js-packery ]" >
 
 						<article class="[ margin-bottom ][ column xmall-12 small-6 medium-4 large-3 ]">
 							<div class="[ card card--news ]">
@@ -455,6 +449,14 @@
 				mobileFirst: true,
 				vertical: true,
 				autoplay: true
+			});
+
+			var $container = $('.js-packery').imagesLoaded( function() {
+				$container.packery({
+					"itemSelector": "article",
+					"gutter": 0,
+					"columnWidth": "article"
+				});
 			});
 
 
