@@ -534,10 +534,22 @@
 			$('#global-nav li.parent').on( 'click', function(e){
 				e.preventDefault();
 				var group = $(this).find('.group');
-				toggleClass($('header'), 'opened');
-				$('#global-nav li.parent .group').not(group).removeClass('opened');
-				toggleClass(group, 'opened');
+
+				$('#global-nav li.parent .group').removeClass('opened');
+
+				if ( $(this).hasClass('clicked') ){
+					$('header').removeClass('opened');
+					$(this).removeClass('clicked')
+				} else {
+					$('#global-nav li.parent').removeClass('clicked');
+					$(this).addClass('clicked');
+					$('header').addClass('opened');
+
+					group.addClass('opened');
+				}
 			});
+
+
 
 			$('.helper').on('click', 'svg', function(){
 				toggleClass($('.global-nav__ul'), 'opened');

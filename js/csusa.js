@@ -1,12 +1,5 @@
 $(window).load(function(){
 
-    // show_nav = false;
-    // if($('#global-nav li a.active').parent('li').hasClass('parent')){
-    //     show_nav = true;
-    //     $('header').addClass('opened');
-    //     $('#global-nav li a.active').next('.group').addClass('opened');
-    // }
-
     $('.profile-section').hide();
     $('#section1').show().addClass('active');
 
