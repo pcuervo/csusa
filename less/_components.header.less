@@ -22,6 +22,25 @@ header.opened{
 	}
 }
 
+header.scrolled{
+	@media (min-width: @large) {
+		height: 60px;
+
+		.logo{ width: 34px; }
+		h1{ font-size: 94%; }
+
+		#global-mini-nav{
+			width: 40px;
+			position: relative; top: 6px;
+		}
+		.social-icons{ display: none !important; }
+
+		.helper{ width: 402px; }
+
+		#global-nav a{ font-size: 12px; }
+	}
+}
+
 #global-header .helper {
 	width: 100%;
 }

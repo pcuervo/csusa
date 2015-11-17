@@ -518,7 +518,10 @@
 			 * On load
 			**/
 			imgToSvg();
+			toggleHeaderScrolled();
+
 			$('.js-responsive-video').fitVids();
+
 			$('.js-banners').slick({
 				arrows: false,
 				dots: true,
@@ -530,6 +533,10 @@
 			/**
 			 * Triggered events
 			**/
+
+			$(window).scroll(function() {
+				toggleHeaderScrolled();
+			});
 
 			$('#global-nav li.parent').on( 'click', function(e){
 				e.preventDefault();
