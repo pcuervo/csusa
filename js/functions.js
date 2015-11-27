@@ -41,3 +41,49 @@ function imgToSvg(){
 function toggleClass(element, classToToggle){
     element.toggleClass(classToToggle);
 }
+
+/**
+ * Toggle action buttons
+ */
+ function toggleHeaderScrolled(){
+
+    //Get the header height so we can now when
+    //to change the heade state
+    var headerHeight = getHeaderHeight();
+    //Scrolled pixels in Y axis
+    var sy = getScrollY();
+    //Compare the two numbers, when they are the same or less
+    //add fixed class to the header.
+    if ( sy >= headerHeight ) {
+        $('header, #main').addClass('scrolled');
+    } else {
+        $('header, #main').removeClass('scrolled');
+    }
+}// toggleActionButtons
+
+
+
+/*------------------------------------*\
+    #GET/SET FUNCTIONS
+\*------------------------------------*/
+
+/**
+ * Get header's height
+ */
+function getHeaderHeight(){
+    return $('.js-header').height();
+}// getHeaderHeight
+
+/**
+ * Get footer's height
+ */
+function getFooterHeight(){
+    return $('footer').height();
+}// getFooterHeight
+
+/**
+ * Get the scrolled pixels in Y axis
+ */
+function getScrollY() {
+    return $(window).scrollTop();
+}// getScrollY

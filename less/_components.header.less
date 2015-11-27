@@ -8,7 +8,7 @@ header {
 	background: @dark;
 	position: fixed; top: 0; left: 0;
 	z-index: @zIndex-10;
-	.transition(all 0.3s ease);
+	//.transition(all 0.15s ease);
 
 	@media (min-width: @medium) {
 		height: 90px;
@@ -19,6 +19,37 @@ header {
 header.opened{
 	@media (min-width: @large) {
 		height: 140px;
+	}
+}
+
+header.scrolled{
+	@media (min-width: @large) {
+		height: 60px;
+
+		.logo{ width: 34px; }
+		h1{ font-size: 94%; }
+
+		#global-mini-nav{
+			width: 40px;
+			position: relative; top: 6px;
+			float: right;
+		}
+		.social-icons{ display: none !important; }
+
+		.helper{ width: 402px; }
+
+		#global-nav a{ font-size: 12px; }
+	}
+
+	@media (min-width: @xlarge) {
+		#global-nav a{ padding: 12px 14px 16px 14px; }
+		.helper{ width: 480px; }
+	}
+}
+
+header.opened.scrolled{
+	@media (min-width: @large) {
+		height: 110px;
 	}
 }
 
