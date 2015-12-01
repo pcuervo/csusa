@@ -18,7 +18,7 @@ blockquote{
  * Headings
 **/
 h1{
-	width: 70%;
+	.width-calc(~"100% - 46px");
 	margin: 0 0 0 (@unit/2);
 	font-size: 0.82em;
 	line-height: 1;
@@ -26,6 +26,7 @@ h1{
 	.transition;
 
 	@media (min-width: @medium) {
+		.width-calc(~"100% - 72px");
 		font-size: 1.4em
 	}
 }

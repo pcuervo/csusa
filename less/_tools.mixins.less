@@ -219,3 +219,17 @@
 	background: linear-gradient(135deg, @0 0%, @100 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{@0}', endColorstr='{@100}', GradientType=1 );
 }
+
+
+
+
+/*------------------------------------*\
+	#CALC
+\*------------------------------------*/
+
+.width-calc(@expression) {
+  width: -moz-calc(@expression);
+  width: -o-calc(@expression);
+  width: -webkit-calc(@expression);
+  width: calc(@expression);
+}
