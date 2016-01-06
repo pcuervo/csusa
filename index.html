@@ -281,7 +281,7 @@
 					</div>
 				</div>
 
-				<section class="[ call-to-action ][ gradient--left-top--dark ][ color-light ][ padding--top-bottom margin-bottom ]">
+				<section class="[ call-to-action ][ gradient--left-top--dark ][ color-light ][ padding--top-bottom ]">
 					<div class="[ wrapper ]">
 						<div class="[ row ][ xmall-12 medium-10 large-9 ][ center ]">
 							<div class="[ title ][ xmall-12 medium-3 large-2 ][ inline-block align-middle ][ call-to-action__title ]">
@@ -294,6 +294,8 @@
 						</div>
 					</div>
 				</section>
+				<a href="#" class="[ button button--action button--primary ][ inline-block ][ margin-bottom ]">Free Assessment</a>
+
 
 				<section class="[ margin-bottom ]">
 					<div class="[ wrapper ][ row ]">
@@ -562,7 +564,7 @@
 
 			</div><!-- main -->
 
-			<a href="#" class="[ button button--action button--primary ][ inline-block ]">Free Assessment</a>
+			<a href="#" class="[ button button--action button--action--bottom button--primary ][ inline-block ]">Free Assessment</a>
 
 			<footer class="[ footer ][ padding--top-bottom--large ][ color-light ][ bg-dark ]">
 
@@ -642,12 +644,21 @@
 			**/
 			imgToSvg();
 			toggleHeaderScrolled();
+			toggleActionButtons();
 
 			$('.js-responsive-video').fitVids();
 			$('.js-banners').slick({
 				arrows: false,
 				dots: true,
-				mobileFirst: true
+				mobileFirst: true,
+				responsive: [
+					{
+						breakpoint: 1024,
+						settings: {
+							autoplay: true
+						}
+					}
+				]
 			});
 
 
@@ -657,6 +668,7 @@
 			**/
 			$(window).scroll(function() {
 				toggleHeaderScrolled();
+				toggleActionButtons();
 			});
 			$('#global-nav li.parent > a').on( 'click', function(e){
 				console.log('click');

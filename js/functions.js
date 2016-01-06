@@ -43,7 +43,7 @@ function toggleClass(element, classToToggle){
 }
 
 /**
- * Toggle action buttons
+ * Toggle header height
  */
  function toggleHeaderScrolled(){
 
@@ -58,6 +58,24 @@ function toggleClass(element, classToToggle){
         $('header, #main').addClass('scrolled');
     } else {
         $('header, #main').removeClass('scrolled');
+    }
+}// toggleHeaderScrolled
+
+/**
+ * Toggle action buttons
+ */
+ function toggleActionButtons(){
+    //Get the action button offset
+    var buttonActionOffset = $('.button--action').not('.button--action--bottom').offset().top - $(window).scrollTop();
+
+    //Scrolled pixels in Y axis
+    var sy = getScrollY();
+    //Compare the two numbers, when they are the same or less
+    //add fixed class to the header.
+    if ( buttonActionOffset <= 0 ) {
+        $('.button--action--bottom').addClass('scrolled');
+    } else {
+        $('.button--action--bottom').removeClass('scrolled');
     }
 }// toggleActionButtons
 

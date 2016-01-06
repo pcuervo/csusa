@@ -76,17 +76,36 @@
 	border: none;
 	text-align: center;
 	position: fixed; bottom: 20px; left: 50%;
+	z-index: @zIndex-10;
 
 	.translate(-50%, 0);
 
 	@media (min-width: @large) {
 		width: 100%;
-		bottom: 10px;
 		.border-radius(0);
-		bottom: 0;
+		position: static;
+		.translate(0, 0);
 
 		&:hover{
 			height: 55px;
+			line-height: 2.2;
+			font-size: 120%;
+		}
+	}
+}
+
+.button--action--bottom{
+
+	display: none;
+	position: fixed;
+	.translate(-50%, 0);
+
+	@media (min-width: @large) {
+		display: block;
+		bottom: -60px;
+
+		&.scrolled{
+			bottom: 0;
 		}
 	}
 }
