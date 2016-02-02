@@ -245,6 +245,21 @@
 	width: 100%; max-width: 100%; height: auto;
 }
 
+.image-fixed-width{
+	width: 100%;
+
+	@media ( min-width: @small ) {
+
+	}
+	@media ( min-width: @medium ) {
+		width: 350px !important;
+		margin-right: 20px;
+	}
+	@media ( min-width: @large ){
+		width: 450px !important;
+	}
+}
+
 /**
  * Responsive background images for logos
 **/
